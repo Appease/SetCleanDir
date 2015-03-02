@@ -13,9 +13,7 @@ Add-CIStep -Name "YOUR-CISTEP-NAME" -ModulePackageId "SetCleanDir"
 a string[] representing the path(s) of one or more directories to clean
 ```PowerShell
 [string[]]
-[ValidateCount(
-    1,
-    [Int]::MaxValue)]
+[ValidateCount( 1, [Int]::MaxValue)]
 [Parameter(
 	Mandatory=$true,
 	ValueFromPipelineByPropertyName=$true)]
