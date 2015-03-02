@@ -31,6 +31,15 @@ a switch representing whether to disable confirmation prompts
 $Force
 ```
 
+#####Recurse
+a switch representing whether to perform a recursive clean by recursively removing child directories
+```PowerShell
+[switch]
+[Parameter(
+	ValueFromPipelineByPropertyName=$true)]
+$Recurse
+```
+
 ####What's the build status?
 ![](https://ci.appveyor.com/api/projects/status/sye7k4oc83plnib3?svg=true)
 
