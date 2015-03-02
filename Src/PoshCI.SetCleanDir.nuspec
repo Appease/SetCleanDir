@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
-		<id>PoshCI.SetCleanDir</id>
-		<title>PoshCI.SetCleanDir</title>
+		<id>SetCleanDir</id>
 		<version>$version$</version>
 		<authors>Chris Dostert</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -10,9 +9,9 @@
 			A PoshCI step that sets one or more clean directories by either creating them or deleting any existing content
 		</description>
 		<tags>Powershell PoshCI Clean</tags>
-		<projectUrl>https://github.com/PoshCI/PoshCI.SetCleanDir</projectUrl>
+		<projectUrl>https://github.com/PoshCI/SetCleanDir</projectUrl>
 	</metadata>	
 	<files>
-		<file src="**" target="tools\PoshCI.SetCleanDir" exclude="**\.nuspec"/>
+		<file src="**" target="tools\SetCleanDir" exclude="**\.nuspec"/>
 	</files>
 </package>
