@@ -20,8 +20,30 @@ $Force,
 [Parameter(
     ValueFromPipelineByPropertyName=$true)]
 $Recurse){
+    
+    foreach($cleanDirPath in $Path){
+        
+        if(Test-Path $cleanDirPath){
 
-    $Path |?{Test-Path -Path $_} | %{ri $_ -Force:$Force -Recurse:$Recurse}
+           $childItems = gci $cleanDirPath -Force:$Force
+
+           if(!$Recurse.IsPresent){
+
+               Write-Debug "`$Recurse was not specified; excluding directories from removal list"
+               $childItems = $childItems | ?{!$_.PSIsContainer}
+               Write-Debug "Removal list will be $($childItems|Out-String)"
+           
+           }
+                      
+           $childItems | %{ri $_.FullName -Force:$Force -Recurse:$Recurse}
+
+        }
+        else{
+
+            mkdir $cleanDirPath -Force:$Force                
+        
+        }
+    }
 
 }
 
