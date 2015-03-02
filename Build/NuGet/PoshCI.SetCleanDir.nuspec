@@ -7,7 +7,7 @@
 		<authors>Chris Dostert</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>
-			A Posh-CI step that sets one or more clean directories by either creating them or deleting any existing content
+			A PoshCI step that sets one or more clean directories by either creating them or deleting any existing content
 		</description>
 		<tags>Powershell PoshCI Clean</tags>
 		<projectUrl>https://github.com/PoshCI/PoshCI.SetCleanDir</projectUrl>
