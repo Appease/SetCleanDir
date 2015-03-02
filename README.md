@@ -10,7 +10,7 @@ Add-CIStep -Name "YOUR-CISTEP-NAME" -ModulePackageId "SetCleanDir"
 
 ####What parameters are available?
 #####Path
-a string[] representing the path(s) of one or more directories to clean
+A string[] representing the path(s) of one or more directories to clean.
 ```PowerShell
 [string[]]
 [ValidateCount( 1, [Int]::MaxValue)]
@@ -21,7 +21,7 @@ $Path
 ```
 
 #####Force
-a switch representing whether to disable confirmation prompts
+A switch representing whether to disable confirmation prompts.
 ```PowerShell
 [switch]
 [Parameter(
@@ -30,7 +30,7 @@ $Force
 ```
 
 #####Recurse
-a switch representing whether to perform a recursive clean by recursively removing child directories
+A switch representing whether to perform a recursive clean by recursively removing child directories.
 ```PowerShell
 [switch]
 [Parameter(
