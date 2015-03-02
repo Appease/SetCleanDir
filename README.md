@@ -27,19 +27,8 @@ a switch representing whether to disable confirmation prompts
 ```PowerShell
 [switch]
 [Parameter(
-	Mandatory=$true,
 	ValueFromPipelineByPropertyName=$true)]
 $Force
-```
-
-#####Recurse
-a switch representing whether to perform a recursive clean by recursively removing any child directories
-```PowerShell
-[switch]
-[Parameter(
-	Mandatory=$true,
-	ValueFromPipelineByPropertyName=$true)]
-$Recurse
 ```
 
 ####What's the build status?
