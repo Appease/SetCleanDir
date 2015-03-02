@@ -5,7 +5,7 @@ A Posh-CI step that sets one or more clean directories by either creating them o
 ####How do I install it?
 
 ```PowerShell
-Add-CIStep -Name "YOUR-CISTEP-NAME" -ModulePackageId "Posh-CI-SetCleanDir"
+Add-CIStep -Name "YOUR-CISTEP-NAME" -ModulePackageId "PoshCI.SetCleanDir"
 ```
 
 ####What parameters are available?
