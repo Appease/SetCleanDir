@@ -13,13 +13,11 @@ $Path,
 
 [switch]
 [Parameter(
-	Mandatory=$true,
 	ValueFromPipelineByPropertyName=$true)]
 $Force,
 
 [switch]
 [Parameter(
-    Mandatory=$true,
     ValueFromPipelineByPropertyName=$true)]
 $Recurse){
 
