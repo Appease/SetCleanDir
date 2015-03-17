@@ -6,10 +6,10 @@
 		<authors>Chris Dostert</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>
-			A PoshCI step that sets one or more clean directories by either creating them or deleting any existing content
+			A PoshDevOps task that sets one or more clean directories by either creating them or deleting any existing content
 		</description>
-		<tags>Powershell PoshCI Clean</tags>
-		<projectUrl>https://github.com/PoshCI/SetCleanDir</projectUrl>
+		<tags>Powershell PoshDevOps Clean</tags>
+		<projectUrl>https://github.com/PoshDevOps/SetCleanDir</projectUrl>
 	</metadata>	
 	<files>
 		<file src="**" target="tools\SetCleanDir" exclude="**\.nuspec"/>

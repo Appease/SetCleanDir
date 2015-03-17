@@ -1,11 +1,11 @@
 ####What is it?
 
-A [PoshCI](https://github.com/PoshCI/PoshCI) step that sets one or more clean directories by either creating them or deleting any existing content
+A [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) step that sets one or more clean directories by either creating them or deleting any existing content
 
 ####How do I install it?
 
 ```PowerShell
-Add-CIStep -Name "YOUR-CISTEP-NAME" -ModulePackageId "SetCleanDir"
+Add-PoshDevOpsTask -Name "YOUR-CISTEP-NAME" -ModulePackageId "SetCleanDir"
 ```
 
 ####What parameters are available?
