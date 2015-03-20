@@ -5,7 +5,7 @@ A [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) task that sets one or m
 ####How do I install it?
 
 ```PowerShell
-Add-PoshDevOpsTask -Name "YOUR-CISTEP-NAME" -ModulePackageId "SetCleanDir"
+Add-PoshDevOpsTask -Name "YOUR-TASK-NAME" -ModulePackageId "SetCleanDir"
 ```
 
 ####What parameters are available?
