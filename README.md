@@ -1,6 +1,6 @@
 ####What is it?
 
-A [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) step that sets one or more clean directories by either creating them or deleting any existing content
+A [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) task that sets one or more clean directories by either creating them or deleting any existing content
 
 ####How do I install it?
 

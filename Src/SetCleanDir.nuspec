@@ -6,7 +6,7 @@
 		<authors>Chris Dostert</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>
-			A PoshDevOps task that sets one or more clean directories by either creating them or deleting any existing content
+			A Poshtask that sets one or more clean directories by either creating them or deleting any existing content
 		</description>
 		<tags>Powershell PoshDevOps Clean</tags>
 		<projectUrl>https://github.com/PoshDevOps/SetCleanDir</projectUrl>
