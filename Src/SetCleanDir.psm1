@@ -1,7 +1,7 @@
 # halt immediately on any errors which occur in this module
 $ErrorActionPreference = 'Stop'
 
-function Invoke-PoshDevOpsTask(
+function Invoke(
 [string[]]
 [ValidateCount(
     1,
@@ -47,4 +47,4 @@ $Recurse){
 
 }
 
-Export-ModuleMember -Function Invoke-PoshDevOpsTask
+Export-ModuleMember -Function Invoke

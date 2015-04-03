@@ -1,43 +1,26 @@
+![](https://ci.appveyor.com/api/projects/status/0mhxw7odiyf41p4v?svg=true)
+
 ####What is it?
 
-A [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) task that sets one or more clean directories by either creating them or deleting any existing content
+An [Appease](http://appease.io) task template that sets one or more clean directories by either creating them or deleting any existing content
 
 ####How do I install it?
 
 ```PowerShell
-Add-PoshDevOpsTask -Name "YOUR-TASK-NAME" -ModulePackageId "SetCleanDir"
+Add-AppeaseTask `
+-DevOpName YOUR-DEVOP-NAME `
+-Name YOUR-TASK-NAME `
+-TemplateId SetCleanDir
 ```
 
-####What parameters are available?
+####What parameters are required?
 #####Path
-A string[] representing the path(s) of one or more directories to clean.
-```PowerShell
-[string[]]
-[ValidateCount( 1, [Int]::MaxValue)]
-[Parameter(
-	Mandatory=$true,
-	ValueFromPipelineByPropertyName=$true)]
-$Path
-```
+description: a `string[]` representing the path(s) of one or more directories to clean.
+
+####What parameters are optional?
 
 #####Force
-A switch representing whether to disable confirmation prompts.
-```PowerShell
-[switch]
-[Parameter(
-	ValueFromPipelineByPropertyName=$true)]
-$Force
-```
+description: a `switch` representing whether to disable confirmation prompts.
 
 #####Recurse
-A switch representing whether to perform a recursive clean by recursively removing child directories.
-```PowerShell
-[switch]
-[Parameter(
-	ValueFromPipelineByPropertyName=$true)]
-$Recurse
-```
-
-####What's the build status?
-![](https://ci.appveyor.com/api/projects/status/0mhxw7odiyf41p4v?svg=true)
-
+description: a `switch` representing whether to perform a recursive clean by recursively removing child directories.
